@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+/* Modal bloqueante */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 1rem;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+}
+
+.modal button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background: #af4c95;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.chat-header {
+  width: 100%;
+  background-color: #af4c95;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+/* Chat container */
+.chat-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+}
+
+.chat-messages {
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  flex-direction: column;
+  gap: 8px;
+  background-image:linear-gradient(rgba(255, 255, 255, 0.5)), url('./img/bgchat.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.chat-input {
+  display: flex;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #af4c95;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.chat-messages p {
+  display: inline-block;
+  width: fit-content;
+  max-width: 50%;
+  background-color: #ce75b7;
+  border-radius: 15px 15px 15px 0;
+  padding: 10px 15px;
+  margin: 8px 0;
+  word-wrap: break-word;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+/* Ocultar elementos */
+.hidden {
+  display: none;
+}
